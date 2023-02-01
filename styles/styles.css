@@ -6,12 +6,6 @@ html{
     font-size: 62,5%;
 }
 .containerIndex{
-    display: grid;
-    grid-template:
-        "header" 1fr
-        "main" 18fr
-        "footer" 1fr;
-    height: 100vh;
     background: linear-gradient(to bottom, #F5CFEB 0%, #F5CFEB 50%, white 0%, white 100%);
 }
 header{
@@ -25,18 +19,45 @@ h1{
     font-size: 3rem;
     letter-spacing: 1rem;
 }
-nav{
+.botonMenu{
+    color: #BD7E80;
+    border-color: #BD7E80;
+    display: flex;
+    align-items: center;
+}
+.botonMenuImagen{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(../assets/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.botonCerrarMenu{
+    border: none;
+    background: transparent;
+}
+.menuDesplegado{
     background-color: #F63804;
 }
-ul{
+.menuDesplegado ul{
     list-style: none;
     font-family: work sans, sans-serif;
+    text-align: end;
+    font-size: 2.5rem;
+}
+.menuDesplegado li{
+    margin: 3rem 0;
+    border-bottom: #F5CFEB 1px solid;
 }
 nav a{
     color: #F5CFEB;
     text-decoration: none;
 }
 main{
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -56,6 +77,7 @@ main{
     color: #F63804;
     font-family: shrikhand, sans-serif;
     font-size: 5rem;
+    padding-left: 1rem;
 }
 .redes{
     position: fixed;
