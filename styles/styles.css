@@ -14,10 +14,14 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
-h1{
+.headerPaginas{
+    background-color: #F5CFEB;
+}
+h1,h2,h3{
     font-family: shrikhand, sans-serif;
     font-size: 3rem;
     letter-spacing: 1rem;
+    color: #F63804;
 }
 .botonMenu{
     color: #BD7E80;
@@ -56,13 +60,13 @@ nav a{
     color: #F5CFEB;
     text-decoration: none;
 }
-main{
+.mainIndex{
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-.mainIndex{    
+.divMainIndex{    
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -86,8 +90,63 @@ main{
     display: flex;
     flex-direction: column;
 }
+.acercaDeMi{
+    grid: acercademi;
+}
+.acercaDeMi, .misProyectos{
+    color: #BD7E80;
+}
+.acercaDeMi h2{
+    text-align: end;
+}
+.acercaDeMi p{
+    text-align: center;
+    font-weight: 500;
+}
+.misProyectos{
+    grid-area: misproyectos;
+}
+.divMisProyectos{
+    display: flex;
+    flex-direction: row;
+    font-family: work sans, sans-serif;
+    text-align: center;
+}
+.divMisProyectos article div{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+.skills{
+    grid-area: skills;
+}
+.skills h3{
+    text-align: end;
+}
+.skillsIconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 footer{
     text-align: center;
     color: #F63804;
     letter-spacing: 1rem;
+}
+.footerPaginas{
+    display: grid;
+    grid-template-areas: 
+    ". copyright iconos";
+    align-items: end;
+    justify-items: center;
+}
+.copyrights{
+    grid-area: copyright;
+}
+.iconos{
+    justify-self:end;
+    grid-area: iconos;
+}
+.iconos img{
+    width: 25%;
 }
