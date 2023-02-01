@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62,5%;
+}
+.containerIndex{
+    display: grid;
+    grid-template:
+        "header" 1fr
+        "main" 18fr
+        "footer" 1fr;
+    height: 100vh;
+    background: linear-gradient(to bottom, #F5CFEB 0%, #F5CFEB 50%, white 0%, white 100%);
+}
+header{
+    color: #F63804;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1{
+    font-family: shrikhand, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
+nav{
+    background-color: #F63804;
+}
+ul{
+    list-style: none;
+    font-family: work sans, sans-serif;
+}
+nav a{
+    color: #F5CFEB;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mainIndex{    
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divTextoBienvenida p{
+    font-family: work sans, sans-serif;
+    color: #BD7E80;
+    text-align: center;
+}
+.divMiPortfolio p{
+    color: #F63804;
+    font-family: shrikhand, sans-serif;
+    font-size: 5rem;
+}
+.redes{
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    text-align: center;
+    color: #F63804;
+    letter-spacing: 1rem;
+}
