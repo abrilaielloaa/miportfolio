@@ -31,6 +31,10 @@ h1, h2, h3 {
   color: #F63804;
 }
 
+h2 {
+  font-size: 4rem;
+}
+
 main {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
@@ -163,6 +167,9 @@ footer {
   justify-content: space-around;
 }
 
+.contacto {
+  margin: 2rem;
+}
 .contacto h3 {
   font-family: work sans, sans-serif;
 }
@@ -177,21 +184,27 @@ footer {
   justify-self: center;
   margin-left: 1rem;
 }
-
-form {
+.sectionForm form {
   display: flex;
   flex-direction: column;
 }
-
-label {
+.sectionForm form label {
   color: #F63804;
   font-weight: 600;
   margin: 1rem 0;
 }
-
-input, textarea {
+.sectionForm form input, .sectionForm form textarea {
   border: #F5CFEB 1px solid;
   border-radius: 4px;
+}
+.sectionForm form .btnEnviar {
+  width: 30%;
+  margin-top: 1rem;
+  background-color: #F5CFEB;
+  color: #BD7E80;
+  font-weight: 600;
+  border-radius: 4px;
+  align-self: end;
 }
 
 .sectionDatos {
@@ -202,17 +215,7 @@ input, textarea {
   border-left: #BD7E80 2px solid;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-left: 2rem;
-}
-
-.btnEnviar {
-  width: 30%;
-  margin-top: 1rem;
-  background-color: #F5CFEB;
-  color: #BD7E80;
-  font-weight: 600;
-  border-radius: 4px;
-  align-self: end;
+  padding-right: 4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
