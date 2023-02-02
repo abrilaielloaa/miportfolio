@@ -1,0 +1,34 @@
+.acercaDeMi h2{
+    margin-top: 3rem;
+    text-align: end;
+}
+.acercaDeMi, .misProyectos{
+    color: #BD7E80;
+}
+
+.acercaDeMi p{
+    text-align: center;
+    font-weight: 500;
+}
+.misProyectos{
+    grid-area: misproyectos;
+}
+.divMisProyectos{
+    display: flex;
+    flex-direction: row;
+    font-family: work sans, sans-serif;
+    text-align: center;
+}
+.divMisProyectos article div{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+.skills h3{
+    text-align: end;
+}
+.skillsIconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

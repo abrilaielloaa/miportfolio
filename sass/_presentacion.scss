@@ -1,0 +1,24 @@
+.containerIndex{
+    background: linear-gradient(to bottom, #F5CFEB 0%, #F5CFEB 50%, white 0%, white 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+} 
+.divMainIndex{    
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divTextoBienvenida p{
+    font-family: work sans, sans-serif;
+    color: #BD7E80;
+    text-align: center;
+}
+.divMiPortfolio p{
+    color: #F63804;
+    font-family: shrikhand, sans-serif;
+    font-size: 5rem;
+    padding-left: 1rem;
+}

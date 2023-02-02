@@ -1,0 +1,44 @@
+.contacto h3{
+    font-family: work sans, sans-serif;
+}
+.divContacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sectionForm{
+    font-family: work sans, sans-serif;
+    justify-self:center;
+    margin-left: 1rem;
+}
+form{
+    display: flex;
+    flex-direction:column;
+}
+label{
+    color: #F63804;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+input, textarea{
+    border:#F5CFEB 1px solid;
+    border-radius: 4px;
+}
+.sectionDatos{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    color:#BD7E80;
+    border-left:#BD7E80 2px solid;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 2rem;
+}
+.btnEnviar{
+    width: 30%;
+    margin-top: 1rem;
+    background-color: #F5CFEB;
+    color: #BD7E80;
+    font-weight: 600;
+    border-radius: 4px;
+    align-self: end;
+}

@@ -1,0 +1,49 @@
+header{
+    color: #F63804;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F5CFEB;
+}
+.botonMenu{
+    color: #BD7E80;
+    border-color: #BD7E80;
+    display: flex;
+    align-items: center;
+}
+.botonMenuImagen{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(../assets/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.botonCerrarMenu{
+    border: none;
+    background: transparent;
+}
+.menuDesplegado{
+    background-color: #F63804;
+}
+.menuDesplegado ul{
+    list-style: none;
+    font-family: work sans, sans-serif;
+    text-align: end;
+    font-size: 2.5rem;
+}
+.menuDesplegado li{
+    margin: 3rem 0;
+    border-bottom: #F5CFEB 1px solid;
+}
+nav a{
+    color: #F5CFEB;
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    color: #F63804;
+    letter-spacing: 1rem;
+}
