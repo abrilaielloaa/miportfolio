@@ -4,7 +4,7 @@
 }
 
 html {
-  font-size: 62,5%;
+  font-size: 62, 5%;
 }
 
 * {
@@ -13,7 +13,22 @@ html {
 }
 
 html {
-  font-size: 62,5%;
+  font-size: 62, 5%;
+}
+
+.redes {
+  position: fixed;
+  right: 1rem;
+  bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: shrikhand, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: #F63804;
 }
 
 header {
@@ -22,13 +37,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background-color: #F5CFEB;
-}
-
-h1, h2, h3 {
-  font-family: shrikhand, sans-serif;
-  font-size: 3rem;
-  letter-spacing: 1rem;
-  color: #F63804;
 }
 
 .botonMenu {
@@ -75,8 +83,131 @@ nav a {
   text-decoration: none;
 }
 
+footer {
+  text-align: center;
+  color: #F63804;
+  letter-spacing: 1rem;
+}
+
 .containerIndex {
   background: linear-gradient(to bottom, #F5CFEB 0%, #F5CFEB 50%, white 0%, white 100%);
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
+
+.divMainIndex {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divTextoBienvenida p {
+  font-family: work sans, sans-serif;
+  color: #BD7E80;
+  text-align: center;
+}
+
+.divMiPortfolio p {
+  color: #F63804;
+  font-family: shrikhand, sans-serif;
+  font-size: 5rem;
+  padding-left: 1rem;
+}
+
+.acercaDeMi h2 {
+  margin-top: 3rem;
+  text-align: end;
+}
+
+.acercaDeMi, .misProyectos {
+  color: #BD7E80;
+}
+
+.acercaDeMi p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.misProyectos {
+  grid-area: misproyectos;
+}
+
+.divMisProyectos {
+  display: flex;
+  flex-direction: row;
+  font-family: work sans, sans-serif;
+  text-align: center;
+}
+
+.divMisProyectos article div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills h3 {
+  text-align: end;
+}
+
+.skillsIconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contacto h3 {
+  font-family: work sans, sans-serif;
+}
+
+.divContacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sectionForm {
+  font-family: work sans, sans-serif;
+  justify-self: center;
+  margin-left: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #F63804;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+input, textarea {
+  border: #F5CFEB 1px solid;
+  border-radius: 4px;
+}
+
+.sectionDatos {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  color: #BD7E80;
+  border-left: #BD7E80 2px solid;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-left: 2rem;
+}
+
+.btnEnviar {
+  width: 30%;
+  margin-top: 1rem;
+  background-color: #F5CFEB;
+  color: #BD7E80;
+  font-weight: 600;
+  border-radius: 4px;
+  align-self: end;
+}
+
 /*# sourceMappingURL=styles.css.map */
