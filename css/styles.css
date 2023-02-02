@@ -31,6 +31,11 @@ h1, h2, h3 {
   color: #F63804;
 }
 
+main {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
 header {
   color: #F63804;
   display: flex;
@@ -117,13 +122,17 @@ footer {
   padding-left: 1rem;
 }
 
-.acercaDeMi h2 {
-  margin-top: 3rem;
-  text-align: end;
-}
-
-.acercaDeMi, .misProyectos {
+.acerca {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #BD7E80;
+  margin: 6rem;
+}
+.acerca h2 {
+  border-bottom: #F63804 solid 1px;
+  text-align: end;
+  font-size: 4rem;
 }
 
 .acercaDeMi p {
@@ -131,17 +140,13 @@ footer {
   font-weight: 500;
 }
 
-.misProyectos {
-  grid-area: misproyectos;
-}
-
 .divMisProyectos {
   display: flex;
   flex-direction: row;
   font-family: work sans, sans-serif;
   text-align: center;
+  padding: 4rem;
 }
-
 .divMisProyectos article div {
   display: flex;
   align-items: center;

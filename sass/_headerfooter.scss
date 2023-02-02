@@ -1,13 +1,13 @@
 header{
-    color: #F63804;
+    color: $color-primario;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #F5CFEB;
+    background-color: $color-terciario;
 }
 .botonMenu{
-    color: #BD7E80;
-    border-color: #BD7E80;
+    color: $color-secundario;
+    border-color: $color-secundario;
     display: flex;
     align-items: center;
 }
@@ -26,7 +26,7 @@ header{
     background: transparent;
 }
 .menuDesplegado{
-    background-color: #F63804;
+    background-color: $color-primario;
 }
 .menuDesplegado ul{
     list-style: none;
@@ -36,14 +36,14 @@ header{
 }
 .menuDesplegado li{
     margin: 3rem 0;
-    border-bottom: #F5CFEB 1px solid;
+    border-bottom: $color-terciario 1px solid;
 }
 nav a{
-    color: #F5CFEB;
+    color: $color-terciario;
     text-decoration: none;
 }
 footer{
     text-align: center;
-    color: #F63804;
+    color: $color-primario;
     letter-spacing: 1rem;
 }

@@ -1,28 +1,33 @@
-.acercaDeMi h2{
-    margin-top: 3rem;
-    text-align: end;
-}
-.acercaDeMi, .misProyectos{
-    color: #BD7E80;
-}
+.acerca{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $color-secundario;
+    margin: 6rem;
 
-.acercaDeMi p{
-    text-align: center;
-    font-weight: 500;
+    h2{
+        border-bottom: $color-primario solid 1px;
+        text-align: end;
+        font-size: 4rem;
+    }
 }
-.misProyectos{
-    grid-area: misproyectos;
+.acercaDeMi{  
+        p{
+        text-align: center;
+        font-weight: 500;
+    }
 }
 .divMisProyectos{
     display: flex;
     flex-direction: row;
     font-family: work sans, sans-serif;
     text-align: center;
-}
-.divMisProyectos article div{
-    display: flex;    
-    align-items: center;
-    justify-content: center;
+    padding: 4rem;
+        article div{
+            display: flex;    
+            align-items: center;
+            justify-content: center;
+        }
 }
 .skills h3{
     text-align: end;

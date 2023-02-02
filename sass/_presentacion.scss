@@ -1,5 +1,5 @@
 .containerIndex{
-    background: linear-gradient(to bottom, #F5CFEB 0%, #F5CFEB 50%, white 0%, white 100%);
+    background: linear-gradient(to bottom, $color-terciario 0%, $color-terciario 50%, white 0%, white 100%);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,11 +13,11 @@
 }
 .divTextoBienvenida p{
     font-family: work sans, sans-serif;
-    color: #BD7E80;
+    color: $color-secundario;
     text-align: center;
 }
 .divMiPortfolio p{
-    color: #F63804;
+    color:$color-primario;
     font-family: shrikhand, sans-serif;
     font-size: 5rem;
     padding-left: 1rem;

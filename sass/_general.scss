@@ -24,5 +24,10 @@ h1,h2,h3{
     font-family: shrikhand, sans-serif;
     font-size: 3rem;
     letter-spacing: 1rem;
-    color: #F63804;
+    color: $color-primario;
+}
+
+main{
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr;
 }

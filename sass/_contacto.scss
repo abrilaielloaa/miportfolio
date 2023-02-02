@@ -15,20 +15,20 @@ form{
     flex-direction:column;
 }
 label{
-    color: #F63804;
+    color: $color-primario;
     font-weight: 600;
     margin: 1rem 0;
 }
 input, textarea{
-    border:#F5CFEB 1px solid;
+    border:$color-terciario 1px solid;
     border-radius: 4px;
 }
 .sectionDatos{
     display: flex;
     flex-direction: column;
     text-align: end;
-    color:#BD7E80;
-    border-left:#BD7E80 2px solid;
+    color:$color-secundario;
+    border-left:$color-secundario 2px solid;
     align-items: flex-end;
     justify-content: flex-end;
     padding-left: 2rem;
@@ -36,8 +36,8 @@ input, textarea{
 .btnEnviar{
     width: 30%;
     margin-top: 1rem;
-    background-color: #F5CFEB;
-    color: #BD7E80;
+    background-color: $color-terciario;
+    color: $color-secundario;
     font-weight: 600;
     border-radius: 4px;
     align-self: end;
