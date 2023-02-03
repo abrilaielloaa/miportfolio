@@ -118,6 +118,9 @@ footer {
   color: #BD7E80;
   text-align: center;
 }
+.divTextoBienvenida p span {
+  font-weight: 500;
+}
 
 .divMiPortfolio p {
   color: #F63804;
@@ -136,7 +139,6 @@ footer {
 .acerca h2 {
   border-bottom: #F63804 solid 1px;
   text-align: end;
-  font-size: 4rem;
 }
 
 .acercaDeMi p {
@@ -159,6 +161,7 @@ footer {
 
 .skills h3 {
   text-align: end;
+  margin-bottom: 5rem;
 }
 
 .skillsIconos {
