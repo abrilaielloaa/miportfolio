@@ -1,15 +1,27 @@
 header{
     color: $color-primario;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: $color-terciario;
+}
+.divMenu{
+    flex-direction: column;    
+    align-items: stretch;
+        button{
+            align-self: flex-end;
+        }
+}
+.divMobile{
+    display: flex;
+    justify-content: space-between;
+        img{
+            width: 30px;
+        }
+}
+h1{
+    font-size: 3rem;
 }
 .botonMenu{
     color: $color-secundario;
     border-color: $color-secundario;
-    display: flex;
-    align-items: center;
 }
 .botonMenuImagen{
     display: inline-block;
@@ -38,9 +50,14 @@ header{
     margin: 3rem 0;
     border-bottom: $color-terciario 1px solid;
 }
-nav a{
-    color: $color-terciario;
-    text-decoration: none;
+nav {
+    a{
+        color: $color-terciario;
+        text-decoration: none;
+    }
+}
+.offcanvas-backdrop.show{
+    display: none;
 }
 footer{
     text-align: center;

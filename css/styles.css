@@ -7,52 +7,47 @@ html {
   font-size: 62, 5%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62, 5%;
+a {
+  text-decoration: none;
 }
 
 .redes {
-  position: fixed;
-  right: 1rem;
-  bottom: 5rem;
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 
 h1, h2, h3 {
   font-family: shrikhand, sans-serif;
-  font-size: 3rem;
-  letter-spacing: 1rem;
   color: #F63804;
-}
-
-h2 {
-  font-size: 4rem;
-}
-
-main {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
 }
 
 header {
   color: #F63804;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   background-color: #F5CFEB;
+}
+
+.divMenu {
+  flex-direction: column;
+  align-items: stretch;
+}
+.divMenu button {
+  align-self: flex-end;
+}
+
+.divMobile {
+  display: flex;
+  justify-content: space-between;
+}
+.divMobile img {
+  width: 30px;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 .botonMenu {
   color: #BD7E80;
   border-color: #BD7E80;
-  display: flex;
-  align-items: center;
 }
 
 .botonMenuImagen {
@@ -92,28 +87,18 @@ nav a {
   text-decoration: none;
 }
 
+.offcanvas-backdrop.show {
+  display: none;
+}
+
 footer {
   text-align: center;
   color: #F63804;
   letter-spacing: 1rem;
 }
 
-.containerIndex {
-  background: linear-gradient(to bottom, #F5CFEB 0%, #F5CFEB 50%, white 0%, white 100%);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.divMainIndex {
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .divTextoBienvenida p {
+  background-color: #F5CFEB;
   font-family: work sans, sans-serif;
   color: #BD7E80;
   text-align: center;
@@ -122,21 +107,21 @@ footer {
   font-weight: 500;
 }
 
+.divMiPortfolio {
+  margin: 11px;
+}
 .divMiPortfolio p {
+  font-size: 4rem;
   color: #F63804;
   font-family: shrikhand, sans-serif;
-  font-size: 5rem;
-  padding-left: 1rem;
 }
 
 .acerca {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   color: #BD7E80;
-  margin: 6rem;
+  padding: 27px 15px;
 }
 .acerca h2 {
+  font-size: 3rem;
   border-bottom: #F63804 solid 1px;
   text-align: end;
 }
@@ -146,40 +131,40 @@ footer {
   font-weight: 500;
 }
 
+h3 {
+  font-size: 2rem;
+  margin: 10px 3px;
+}
+
 .divMisProyectos {
-  display: flex;
-  flex-direction: row;
   font-family: work sans, sans-serif;
   text-align: center;
-  padding: 4rem;
 }
 .divMisProyectos article div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #BD7E80;
+  color: #F5CFEB;
+}
+
+.acercaDeMi, .divMisProyectos, .skills {
+  margin-bottom: 62px;
 }
 
 .skills h3 {
   text-align: end;
-  margin-bottom: 5rem;
 }
 
 .skillsIconos {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.skillsIconos img {
+  width: 70px;
+  margin: 25px;
 }
 
-.contacto {
-  margin: 2rem;
-}
 .contacto h3 {
   font-family: work sans, sans-serif;
-}
-
-.divContacto {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .sectionForm {
@@ -187,38 +172,27 @@ footer {
   justify-self: center;
   margin-left: 1rem;
 }
-.sectionForm form {
-  display: flex;
-  flex-direction: column;
-}
 .sectionForm form label {
   color: #F63804;
   font-weight: 600;
-  margin: 1rem 0;
 }
 .sectionForm form input, .sectionForm form textarea {
   border: #F5CFEB 1px solid;
   border-radius: 4px;
 }
 .sectionForm form .btnEnviar {
-  width: 30%;
-  margin-top: 1rem;
   background-color: #F5CFEB;
   color: #BD7E80;
   font-weight: 600;
   border-radius: 4px;
-  align-self: end;
 }
 
 .sectionDatos {
-  display: flex;
-  flex-direction: column;
   text-align: end;
   color: #BD7E80;
   border-left: #BD7E80 2px solid;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-right: 4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

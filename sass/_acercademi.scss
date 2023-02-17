@@ -1,14 +1,11 @@
 .acerca{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     color: $color-secundario;
-    margin: 6rem;
-
-    h2{
-        border-bottom: $color-primario solid 1px;
-        text-align: end;
-    }
+    padding: 27px 15px;
+        h2{
+            font-size: 3rem;
+            border-bottom: $color-primario solid 1px;
+            text-align: end;
+        }
 }
 .acercaDeMi{  
         p{
@@ -16,24 +13,33 @@
         font-weight: 500;
     }
 }
+h3{
+    font-size: 2rem;
+    margin: 10px 3px;
+}
 .divMisProyectos{
-    display: flex;
-    flex-direction: row;
     font-family: work sans, sans-serif;
     text-align: center;
-    padding: 4rem;
-        article div{
-            display: flex;    
-            align-items: center;
-            justify-content: center;
+        article{
+            div{
+                background-color: $color-secundario;
+                color: $color-terciario;
+                
+            }
         }
+}
+.acercaDeMi, .divMisProyectos, .skills{
+    margin-bottom: 62px;
 }
 .skills h3{
     text-align: end;
-    margin-bottom: 5rem;
 }
 .skillsIconos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+        img{
+            width: 70px;
+            margin: 25px;
+        }
 }

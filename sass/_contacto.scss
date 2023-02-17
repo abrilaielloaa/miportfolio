@@ -1,47 +1,35 @@
 .contacto{
-    margin: 2rem;
     h3{
     font-family: work sans, sans-serif;
 }
 }
 .divContacto{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 .sectionForm{
     font-family: work sans, sans-serif;
     justify-self:center;
     margin-left: 1rem;
     form{
-        display: flex;
-        flex-direction:column;
         label{
             color: $color-primario;
             font-weight: 600;
-            margin: 1rem 0;
         }
         input, textarea{
             border:$color-terciario 1px solid;
             border-radius: 4px;
         }
         .btnEnviar{
-            width: 30%;
-            margin-top: 1rem;
             background-color: $color-terciario;
             color: $color-secundario;
             font-weight: 600;
             border-radius: 4px;
-            align-self: end;
         }
     }
 }
 .sectionDatos{
-    display: flex;
-    flex-direction: column;
     text-align: end;
     color:$color-secundario;
     border-left:$color-secundario 2px solid;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-right:4rem
 }
