@@ -15,14 +15,20 @@
 </head>
 
 <body>
-        <header class="navbar fixed-top">
-            <div class="container-fluid">
-                <h1>Abril Aiello</h1>
+        <header class="navbar sticky-top">
+            <div class="container-fluid divMenu align-items-stretch">
+                <div class="divMobile">
+                    <h1>Abril Aiello</h1>
+                    <div class="d-flex">
+                        <a href="https://github.com/abrilaielloaa" target="_blank"><img src="./assets/orangegithub.png" alt="link a mi perfil en github"></a>
+                        <a href="https://www.linkedin.com/in/abril-aiello/" target="_blank"><img src="./assets/orangelinkedin.png" alt="link a mi perfil en linkedin"></a>
+                    </div>
+                </div>
                 <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="botonMenuImagen"></span>
                 </button>
-                <nav class="offcanvas offcanvas-end menuDesplegado w-75" tabindex="-1" id="offcanvasNavbar"
+                <nav class="offcanvas offcanvas-end menuDesplegado w-100" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header justify-content-end">
                         <button type="button" class="botonCerrarMenu" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -44,7 +50,7 @@
                 <div class="divMainIndex">
                     <div class="divTextoBienvenida">
                         <p>Lo que realmente quería poner acá, quedaba muy mal con el diseño de la página. <br><span>Soy Desarrolladora
-                        Web y este es mi portfolio Bienvenida/o/e!</span></p>
+                        Web y este es mi portfolio. Bienvenida!</span></p>
                     </div>
                     <div class="divMiPortfolio">
                         <p>Mi<br>portfolio</p>
@@ -53,37 +59,45 @@
             </div>
             <section class="acerca">
                 <div class="acercaDeMi">
-                    <h2>Acerca de mi</h2>
+                    <h2>Acerca<br>de mi</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
                 </div>
                 <div class="misProyectos">
                     <h3>Mis proyectos</h3>
                     <div class="divMisProyectos">
                         <article>
-                            <div>
-                                <h4>Clase grid</h4>
-                            </div>
+                            <a href="#" target="_blank">
+                                <div>
+                                    <h4>Clase grid</h4>
+                                </div>
+                            </a>
                             <img src="./assets/flecha.png" alt="">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
                         </article>
                         <article>
-                            <div>
-                                <h4>Clase flexbox</h4>
-                            </div>
+                            <a href="#" target="_blank">
+                                <div>
+                                    <h4>Clase flexbox</h4>
+                                </div>
+                            </a>
                             <img src="./assets/flecha.png" alt="">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
                         </article>
                         <article>
-                            <div>
-                                <h4>Recetario</h4>
-                            </div>
+                            <a href="#" target="_blank">
+                                <div>
+                                    <h4>Recetario</h4>
+                                </div>
+                            </a>
                             <img src="./assets/flecha.png" alt="">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
                         </article>
                         <article>
-                            <div>
-                                <h4>Lorem Ipsum</h4>
-                            </div>
+                            <a href="#" target="_blank">
+                                <div>
+                                    <h4>Lorem Ipsum</h4>
+                                </div>
+                            </a>
                             <img src="./assets/flecha.png" alt="">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
                         </article>
@@ -137,5 +151,7 @@
         crossorigin="anonymous"></script>
     <script src="./script/main.js"></script>
 </body>
+
+</html>
 
 </html>
