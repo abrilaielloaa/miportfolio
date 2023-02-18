@@ -17,32 +17,34 @@
 <body>
         <header class="navbar sticky-top">
             <div class="container-fluid divMenu align-items-stretch">
-                <div class="divMobile">
+                <div>
                     <h1>Abril Aiello</h1>
-                    <div class="d-flex">
+                </div>
+                <div class="divMobile">
+                    <div class="divRedesMobile">
                         <a href="https://github.com/abrilaielloaa" target="_blank"><img src="./assets/orangegithub.png" alt="link a mi perfil en github"></a>
                         <a href="https://www.linkedin.com/in/abril-aiello/" target="_blank"><img src="./assets/orangelinkedin.png" alt="link a mi perfil en linkedin"></a>
                     </div>
+                    <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="botonMenuImagen"></span>
+                    </button>
+                    <nav class="offcanvas offcanvas-end menuDesplegado w-100" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header justify-content-end">
+                            <button type="button" class="botonCerrarMenu" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <img src="./assets/cerrar.png" alt="cerrar menu de navegación">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body d-flex justify-content-end">
+                            <ul class="d-flex flex-column">
+                                <li><a href="#inicio">inicio</a></li>
+                                <li><a href="#acerca">acerca de mi</a></li>
+                                <li><a href="#contacto">contacto</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-                <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="botonMenuImagen"></span>
-                </button>
-                <nav class="offcanvas offcanvas-end menuDesplegado w-100" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header justify-content-end">
-                        <button type="button" class="botonCerrarMenu" data-bs-dismiss="offcanvas" aria-label="Close">
-                            <img src="./assets/cerrar.png" alt="cerrar menu de navegación">
-                        </button>
-                    </div>
-                    <div class="offcanvas-body d-flex justify-content-end">
-                        <ul class="d-flex flex-column">
-                            <li><a href="#inicio">inicio</a></li>
-                            <li><a href="#acerca">acerca de mi</a></li>
-                            <li><a href="#contacto">contacto</a></li>
-                        </ul>
-                    </div>
-                </nav>
             </div>
         </header>
         <main class="mainIndex">
@@ -57,94 +59,96 @@
                     </div>
                 </div>
             </div>
-            <section class="acerca">
-                <div class="acercaDeMi">
-                    <h2>Acerca<br>de mi</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                </div>
-                <div class="misProyectos">
-                    <h3>Mis proyectos</h3>
-                    <div class="divMisProyectos">
-                        <article>
-                            <a href="#" target="_blank">
-                                <div>
-                                    <h4>Clase grid</h4>
-                                </div>
-                            </a>
-                            <img src="./assets/flecha.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                        </article>
-                        <article>
-                            <a href="#" target="_blank">
-                                <div>
-                                    <h4>Clase flexbox</h4>
-                                </div>
-                            </a>
-                            <img src="./assets/flecha.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                        </article>
-                        <article>
-                            <a href="#" target="_blank">
-                                <div>
-                                    <h4>Recetario</h4>
-                                </div>
-                            </a>
-                            <img src="./assets/flecha.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                        </article>
-                        <article>
-                            <a href="#" target="_blank">
-                                <div>
-                                    <h4>Lorem Ipsum</h4>
-                                </div>
-                            </a>
-                            <img src="./assets/flecha.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                        </article>
+            <div class="mainDiv">
+                <section class="acerca">
+                    <div class="acercaDeMi">
+                        <h2>Acerca<br> de mi</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
                     </div>
-                </div>
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <div class="skillsIconos">
-                        <img src="./assets/html.png" alt="html">
-                        <img src="./assets/css.png" alt="css">
-                        <img src="./assets/bootstrap.png" alt="bootstrap">
-                        <img src="./assets/git.png" alt="git">
-                        <img src="./assets/github.png" alt="github">
-                        <img src="./assets/wordpress-logo.png" alt="wordpress">
+                    <div class="misProyectos">
+                        <h3>Mis proyectos</h3>
+                        <div class="divMisProyectos">
+                            <article>
+                                <a href="#" target="_blank">
+                                    <div>
+                                        <h4>Clase grid</h4>
+                                    </div>
+                                </a>
+                                <img src="./assets/flecha.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
+                            </article>
+                            <article>
+                                <a href="#" target="_blank">
+                                    <div>
+                                        <h4>Clase flexbox</h4>
+                                    </div>
+                                </a>
+                                <img src="./assets/flecha.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
+                            </article>
+                            <article>
+                                <a href="#" target="_blank">
+                                    <div>
+                                        <h4>Recetario</h4>
+                                    </div>
+                                </a>
+                                <img src="./assets/flecha.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
+                            </article>
+                            <article>
+                                <a href="#" target="_blank">
+                                    <div>
+                                        <h4>Lorem Ipsum</h4>
+                                    </div>
+                                </a>
+                                <img src="./assets/flecha.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
+                            </article>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="contacto"> 
-                <h2>Contacto</h2>
-                <div class="divContacto">
-                    <div class="sectionForm">
-                        <form action="">
-                            <div>
-                                <label for="nombreapellido">Nombre y Apellido</label>
-                                <input type="text" name="nombreapellido" id="nombreapellido">
-                            </div>
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="text" name="email" id="email">
-                            </div>
-                            <div>
-                                <label for="mensaje">Escribi tu mensaje</label>
-                                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                            </div> 
-                            <div class="formBoton">    
-                                <input type="submit" value="Enviar" class="btnEnviar">
-                            </div>
-                        </form>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skillsIconos">
+                            <img src="./assets/html.png" alt="html">
+                            <img src="./assets/css.png" alt="css">
+                            <img src="./assets/bootstrap.png" alt="bootstrap">
+                            <img src="./assets/git.png" alt="git">
+                            <img src="./assets/github.png" alt="github">
+                            <img src="./assets/wordpress-logo.png" alt="wordpress">
+                        </div>
                     </div>
-                    <div class="sectionDatos">
-                        <p>hola@gmail.com</p>
-                        <p>linkedin.com/abril-aiello</p>
-                        <p>github.com/abrilaielloaa</p>
-                        <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
+                </section>
+                <section class="contacto"> 
+                    <h2>Contacto</h2>
+                    <div class="divContacto">
+                        <div class="sectionForm">
+                            <form action="">
+                                <div>
+                                    <label for="nombreapellido">Nombre y Apellido</label>
+                                    <input type="text" name="nombreapellido" id="nombreapellido">
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email">
+                                </div>
+                                <div>
+                                    <label for="mensaje">Escribi tu mensaje</label>
+                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                                </div> 
+                                <div class="formBoton">    
+                                    <input type="submit" value="Enviar" class="btnEnviar">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sectionDatos">
+                            <p>hola@gmail.com</p>
+                            <p>linkedin.com/abril-aiello</p>
+                            <p>github.com/abrilaielloaa</p>
+                            <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
         <div class="redes">
             <a href="https://github.com/abrilaielloaa" target="_blank"><img src="./assets/github.png" alt="icono de github"></a>

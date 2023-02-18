@@ -1,12 +1,14 @@
-.divTextoBienvenida p{
+.divTextoBienvenida{
     background-color: $color-terciario;
-    font-family: work sans, sans-serif;
-    color: $color-secundario;
-    text-align: center;
-        span{
-            font-weight: 500;
+        p{
+            font-family: work sans, sans-serif;
+            color: $color-secundario;
+            text-align: center;
+                span{
+                    font-weight: 500;
+                }
         }
-}
+    }
 .divMiPortfolio {
     margin: 11px;
         p{

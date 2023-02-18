@@ -30,24 +30,24 @@ header {
   background-color: #F5CFEB;
 }
 
-.divMenu {
-  flex-direction: column;
-  align-items: stretch;
-}
-.divMenu button {
-  align-self: flex-end;
+h1 {
+  font-size: 2.3rem;
 }
 
 .divMobile {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: space-between;
 }
-.divMobile img {
-  width: 30px;
-}
 
-h1 {
-  font-size: 3rem;
+.divRedesMobile {
+  display: flex;
+  flex-direction: row;
+  margin: 8px 0;
+}
+.divRedesMobile img {
+  width: 31px;
 }
 
 .botonMenu {
@@ -103,8 +103,10 @@ footer {
   letter-spacing: 0.5rem;
 }
 
-.divTextoBienvenida p {
+.divTextoBienvenida {
   background-color: #F5CFEB;
+}
+.divTextoBienvenida p {
   font-family: work sans, sans-serif;
   color: #BD7E80;
   text-align: center;
@@ -219,6 +221,127 @@ form div {
 form .formBoton {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .redes {
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .redes img {
+    width: 36px;
+  }
+  .divRedesMobile {
+    display: none;
+  }
+  .divTextoBienvenida {
+    padding-top: 183px;
+  }
+  .mainDiv {
+    margin: 0 2.5rem;
+  }
+  .divMisProyectos {
+    display: flex;
+    flex-direction: row;
+  }
+  .skillsIconos {
+    flex-direction: row;
+  }
+  .divContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sectionDatos {
+    display: flex;
+    flex-direction: column;
+    border-left: #BD7E80 2px solid;
+    padding-left: 7px;
+  }
+  .sectionDatos p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .divMobile {
+    justify-content: center;
+  }
+  .redes img {
+    width: 36px;
+  }
+  .divTextoBienvenida {
+    padding-top: 190px;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .mainDiv {
+    margin: 0 3.5rem;
+  }
+  .divMiPortfolio p {
+    font-size: 6.5rem;
+  }
+  .acerca br {
+    display: none;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  .skillsIconos {
+    justify-content: space-around;
+  }
+  .sectionForm label {
+    font-size: 1.5rem;
+  }
+  .sectionForm input {
+    font-size: 1.5rem;
+  }
+  .sectionDatos p {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .divMiPortfolio {
+    margin: 20px;
+  }
+  .divMiPortfolio p {
+    font-size: 8.5rem;
+  }
+  .mainDiv {
+    margin: 0 4.5rem;
+  }
+  .redes img {
+    width: 55px;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 5rem;
+  }
+  .sectionForm input {
+    font-size: 2.5rem;
+  }
+  .sectionForm .btnEnviar {
+    padding: 12px;
+    font-size: 1.5rem;
+  }
+  .sectionDatos {
+    padding-left: 14px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
