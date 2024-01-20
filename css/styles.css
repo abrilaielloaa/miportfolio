@@ -7,17 +7,26 @@ html {
   font-size: 62, 5%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
 a {
   text-decoration: none;
 }
 
-.redes {
-  display: none;
+h1, h2, h3 {
+  font-family: "shrikhand", sans-serif;
+  color: #F63804;
 }
 
-h1, h2, h3 {
-  font-family: shrikhand, sans-serif;
-  color: #F63804;
+h1 {
+  font-size: 2.3rem;
 }
 
 h2 {
@@ -25,29 +34,32 @@ h2 {
   border-bottom: #F63804 solid 1px;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+h5 {
+  color: #BD7E80;
+  font-family: "work-sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.acercaDeMi, .divMisProyectos, .skills {
+  margin-bottom: 62px;
+}
+
+footer {
+  font-size: 1rem;
+  text-align: center;
+  color: #F63804;
+  letter-spacing: 0.5rem;
+}
+
 header {
   color: #F63804;
+  width: 100%;
   background-color: #F5CFEB;
-}
-
-h1 {
-  font-size: 2.3rem;
-}
-
-.divMobile {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.divRedesMobile {
-  display: flex;
-  flex-direction: row;
-  margin: 8px 0;
-}
-.divRedesMobile img {
-  width: 31px;
 }
 
 .botonMenu {
@@ -77,7 +89,7 @@ h1 {
 
 .menuDesplegado ul {
   list-style: none;
-  font-family: work sans, sans-serif;
+  font-family: "work-sans", sans-serif, sans-serif;
   text-align: end;
   font-size: 2.5rem;
 }
@@ -92,25 +104,12 @@ nav a {
   text-decoration: none;
 }
 
-.offcanvas-backdrop.show {
-  display: none;
-}
-
-footer {
-  font-size: 1rem;
-  text-align: center;
-  color: #F63804;
-  letter-spacing: 0.5rem;
-}
-
-.divTextoBienvenida {
-  background-color: #F5CFEB;
-}
 .divTextoBienvenida p {
-  font-family: work sans, sans-serif;
+  font-family: "work-sans", sans-serif;
   color: #BD7E80;
   text-align: center;
 }
+
 .divTextoBienvenida p span {
   font-weight: 500;
 }
@@ -118,41 +117,50 @@ footer {
 .divMiPortfolio {
   margin: 11px;
 }
+
 .divMiPortfolio p {
   font-size: 4rem;
   color: #F63804;
-  font-family: shrikhand, sans-serif;
+  font-family: "shrikhand", sans-serif;
 }
 
-.acerca {
-  color: #BD7E80;
-  padding: 27px 15px;
-}
-.acerca h2 {
-  text-align: end;
+.proyectosEnClase {
+  display: flex;
+  flex-direction: row;
 }
 
-.acercaDeMi p {
-  text-align: center;
-  font-weight: 500;
+.divProyectos {
+  width: 20%;
+  border: #F63804 solid 1px;
 }
 
-h3 {
-  font-size: 2rem;
-  margin: 10px 3px;
+.proyectos {
+  width: 300px;
+  height: 200px;
+  background-color: #F5CFEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyectos:hover h5 {
+  display: none;
+}
+
+.disneyProyecto:hover::after {
+  content: url(../assets/disney.png);
+  width: 300px;
+  height: 200px;
 }
 
 .divMisProyectos {
   font-family: work sans, sans-serif;
   text-align: center;
 }
+
 .divMisProyectos article div {
   background-color: #BD7E80;
   color: #F5CFEB;
-}
-
-.acercaDeMi, .divMisProyectos, .skills {
-  margin-bottom: 62px;
 }
 
 .skills h3 {
@@ -164,6 +172,7 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+
 .skillsIconos img {
   width: 70px;
   margin: 25px;
@@ -172,30 +181,36 @@ h3 {
 .contacto {
   padding: 0 15px;
 }
+
 .contacto h3 {
-  font-family: work sans, sans-serif;
+  font-family: "work-sans", sans-serif;
 }
 
 .divContacto div {
   margin: 80px 0;
 }
+
 .divContacto div div {
   margin: 40px 0 0 0;
 }
 
 .sectionForm {
-  font-family: work sans, sans-serif;
+  font-family: "work-sans", sans-serif;
   justify-self: center;
   margin-left: 1rem;
 }
+
 .sectionForm form label {
   color: #F63804;
   font-weight: 600;
 }
-.sectionForm form input, .sectionForm form textarea {
+
+.sectionForm form input,
+.sectionForm form textarea {
   border: #F5CFEB 1px solid;
   border-radius: 4px;
 }
+
 .sectionForm form .btnEnviar {
   background-color: #F5CFEB;
   color: #BD7E80;
@@ -209,6 +224,7 @@ h3 {
   align-items: flex-end;
   justify-content: flex-end;
 }
+
 .sectionDatos p {
   margin: 26px 0;
   font-size: 1.1rem;
@@ -218,130 +234,10 @@ form div {
   display: flex;
   flex-direction: column;
 }
+
 form .formBoton {
   display: flex;
   align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .redes {
-    position: fixed;
-    right: 1rem;
-    bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .redes img {
-    width: 36px;
-  }
-  .divRedesMobile {
-    display: none;
-  }
-  .divTextoBienvenida {
-    padding-top: 183px;
-  }
-  .mainDiv {
-    margin: 0 2.5rem;
-  }
-  .divMisProyectos {
-    display: flex;
-    flex-direction: row;
-  }
-  .skillsIconos {
-    flex-direction: row;
-  }
-  .divContacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .sectionDatos {
-    display: flex;
-    flex-direction: column;
-    border-left: #BD7E80 2px solid;
-    padding-left: 7px;
-  }
-  .sectionDatos p {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  h1 {
-    font-size: 5rem;
-  }
-  .divMobile {
-    justify-content: center;
-  }
-  .redes img {
-    width: 36px;
-  }
-  .divTextoBienvenida {
-    padding-top: 190px;
-  }
-  p {
-    font-size: 1.5rem;
-  }
-  .mainDiv {
-    margin: 0 3.5rem;
-  }
-  .divMiPortfolio p {
-    font-size: 6.5rem;
-  }
-  .acerca br {
-    display: none;
-  }
-  h2 {
-    font-size: 5rem;
-  }
-  h3 {
-    font-size: 4rem;
-  }
-  .skillsIconos {
-    justify-content: space-around;
-  }
-  .sectionForm label {
-    font-size: 1.5rem;
-  }
-  .sectionForm input {
-    font-size: 1.5rem;
-  }
-  .sectionDatos p {
-    font-size: 1.5rem;
-  }
-  footer {
-    font-size: 2rem;
-    letter-spacing: 1rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .divMiPortfolio {
-    margin: 20px;
-  }
-  .divMiPortfolio p {
-    font-size: 8.5rem;
-  }
-  .mainDiv {
-    margin: 0 4.5rem;
-  }
-  .redes img {
-    width: 55px;
-  }
-  h2 {
-    font-size: 6rem;
-  }
-  h3 {
-    font-size: 5rem;
-  }
-  .sectionForm input {
-    font-size: 2.5rem;
-  }
-  .sectionForm .btnEnviar {
-    padding: 12px;
-    font-size: 1.5rem;
-  }
-  .sectionDatos {
-    padding-left: 14px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

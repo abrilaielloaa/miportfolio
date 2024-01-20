@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+html {
+    font-size: 62, 5%;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    font-family: $fuenteprimaria;
+    color: $colorsecundario;
+}
+h1 {
+    font-size: 2.3rem;
+}
+h2 {
+    font-size: 3rem;
+    border-bottom: $colorsecundario solid 1px;
+}
+h3 {
+    font-size: 2rem;
+}
+h5{
+    color: #BD7E80;
+    font-family: "work-sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.acercaDeMi, .divMisProyectos, .skills {
+    margin-bottom: 62px;
+}
+footer {
+    font-size: 1rem;
+    text-align: center;
+    color: #F63804;
+    letter-spacing: 0.5rem;
+}

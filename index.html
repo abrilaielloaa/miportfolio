@@ -1,166 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content=" width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#F5CFEB">
-    <title>Mi portfolio | Abril Aiello</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Work+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <title>Abril Aiello - Desarrolladora Web</title>
 </head>
-
 <body>
-        <header class="navbar sticky-top">
-            <div class="container-fluid divMenu align-items-stretch">
-                <div>
-                    <h1>Abril Aiello</h1>
-                </div>
-                <div class="divMobile">
-                    <div class="divRedesMobile">
-                        <a href="https://github.com/abrilaielloaa" target="_blank"><img src="./assets/orangegithub.png" alt="link a mi perfil en github"></a>
-                        <a href="https://www.linkedin.com/in/abril-aiello/" target="_blank"><img src="./assets/orangelinkedin.png" alt="link a mi perfil en linkedin"></a>
-                    </div>
-                    <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="botonMenuImagen"></span>
-                    </button>
-                    <nav class="offcanvas offcanvas-end menuDesplegado w-100" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header justify-content-end">
-                            <button type="button" class="botonCerrarMenu" data-bs-dismiss="offcanvas" aria-label="Close">
-                                <img src="./assets/cerrar.png" alt="cerrar menu de navegación">
-                            </button>
-                        </div>
-                        <div class="offcanvas-body d-flex justify-content-end">
-                            <ul class="d-flex flex-column">
-                                <li><a href="#inicio">inicio</a></li>
-                                <li><a href="#acerca">acerca de mi</a></li>
-                                <li><a href="#contacto">contacto</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+    <header class="navbar position-fixed" id="inicio">
+        <div class="container-fluid divMenu align-items-stretch">
+            <div>
+                <h1>Abril Aiello</h1>
             </div>
-        </header>
-        <main class="mainIndex">
-            <div class="containerIndex">
-                <div class="divMainIndex">
-                    <div class="divTextoBienvenida">
-                        <p>Lo que realmente quería poner acá, quedaba muy mal con el diseño de la página. <br><span>Soy Desarrolladora
-                        Web y este es mi portfolio. Bienvenida!</span></p>
-                    </div>
-                    <div class="divMiPortfolio">
-                        <p>Mi<br>portfolio</p>
-                    </div>
+            <div class="divMobile">
+                <div class="divRedesMobile">
+                    <a href="https://github.com/abrilaielloaa" target="_blank"><img src="./assets/orangegithub.png" alt="link a mi perfil en github"></a>
+                    <a href="https://www.linkedin.com/in/abril-aiello/" target="_blank"><img src="./assets/orangelinkedin.png" alt="link a mi perfil en linkedin"></a>
                 </div>
+                <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="botonMenuImagen"></span>
+                </button>
+                <nav class="offcanvas offcanvas-end menuDesplegado w-100" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="botonCerrarMenu" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <img src="./assets/cerrar.png" alt="cerrar menu de navegación">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-end">
+                        <ul class="d-flex flex-column">
+                            <li><a href="#inicio">inicio</a></li>
+                            <li><a href="#acerca">acerca de mi</a></li>
+                            <li><a href="#contacto">contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <div class="mainDiv">
-                <section class="acerca">
-                    <div class="acercaDeMi">
-                        <h2>Acerca<br> de mi</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                    </div>
-                    <div class="misProyectos">
-                        <h3>Mis proyectos</h3>
-                        <div class="divMisProyectos">
-                            <article>
-                                <a href="#" target="_blank">
-                                    <div>
-                                        <h4>Clase grid</h4>
-                                    </div>
-                                </a>
-                                <img src="./assets/flecha.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                            </article>
-                            <article>
-                                <a href="#" target="_blank">
-                                    <div>
-                                        <h4>Clase flexbox</h4>
-                                    </div>
-                                </a>
-                                <img src="./assets/flecha.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                            </article>
-                            <article>
-                                <a href="#" target="_blank">
-                                    <div>
-                                        <h4>Recetario</h4>
-                                    </div>
-                                </a>
-                                <img src="./assets/flecha.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                            </article>
-                            <article>
-                                <a href="#" target="_blank">
-                                    <div>
-                                        <h4>Lorem Ipsum</h4>
-                                    </div>
-                                </a>
-                                <img src="./assets/flecha.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, ratione harum, eos quibusdam nisi quis voluptas maiores nobis non commodi, provident expedita? Dolorum quasi quos pariatur ullam, dicta rem!</p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <h3>Skills</h3>
-                        <div class="skillsIconos">
-                            <img src="./assets/html.png" alt="html">
-                            <img src="./assets/css.png" alt="css">
-                            <img src="./assets/bootstrap.png" alt="bootstrap">
-                            <img src="./assets/git.png" alt="git">
-                            <img src="./assets/github.png" alt="github">
-                            <img src="./assets/wordpress-logo.png" alt="wordpress">
-                        </div>
-                    </div>
-                </section>
-                <section class="contacto"> 
-                    <h2>Contacto</h2>
-                    <div class="divContacto">
-                        <div class="sectionForm">
-                            <form action="">
-                                <div>
-                                    <label for="nombreapellido">Nombre y Apellido</label>
-                                    <input type="text" name="nombreapellido" id="nombreapellido">
-                                </div>
-                                <div>
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" id="email">
-                                </div>
-                                <div>
-                                    <label for="mensaje">Escribi tu mensaje</label>
-                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                                </div> 
-                                <div class="formBoton">    
-                                    <input type="submit" value="Enviar" class="btnEnviar">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="sectionDatos">
-                            <p>hola@gmail.com</p>
-                            <p>linkedin.com/abril-aiello</p>
-                            <p>github.com/abrilaielloaa</p>
-                            <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <div class="redes">
-            <a href="https://github.com/abrilaielloaa" target="_blank"><img src="./assets/github.png" alt="icono de github"></a>
-            <a href="https://www.linkedin.com/in/abril-aiello/" target="_blank"><img src="./assets/linkedin.png" alt="icono de linkedin"></a>
         </div>
-        <footer>
-            <p>© 2023 Abril Aiello</p>
-        </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="./script/main.js"></script>
+    </header>
+    <div>
+        <div>
+            <div>
+                <p>Soy profesora y Desarrolladora Web. Intento compartir mi pasión por el Desarrollo Web e inspirar a otos a construir experiencias digitales útiles, creativas e intuitivas.</p>
+            </div>
+            <div>
+                <p>Mi<br>portfolio</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h2>Acerca de mi</h2>
+            <p>Mi estilo de trabajo se adapta perfectamente tanto al mundo del freelance como a entornos colaborativos en equipo.</p>
+            <p> Mi habilidad para comprender las necesidades del cliente y traducirlas en soluciones digitales efectivas me permite ofrecer un valor excepcional en proyectos independientes. Al mismo tiempo, disfruto trabajando en equipos que promuevan el buen clima laboral y donde la cooperación de habilidades crea resultados aún más impactantes, enriqueciendono el proyecto y a los integrantes</p>
+            <p>Estoy comprometida con la calidad y la eficiencia en cada proyecto, y siempre estoy buscando nuevas formas de aportar innovación y soluciones</p>
+        </section>
+        <section>
+            <h2>Mi experiencia como educadora</h2>
+            <p>Como profesora de desarrollo web, vivenciar el proceso de enseñar y corregir errores a diario me ha brindado una perspectiva única y enriquecedora en mi propio camino como desarrolladora. Al explicar conceptos complejos y enfrentar desafíos comunes con mis estudiantes, fortalezco y profundizo mi comprensión de los fundamentos del desarrollo web.</p>
+            <p>La tarea de guiar a otros a través de los detalles del código no solo me motiva a mantenerme actualizada con las mejores prácticas y metodologías, sino que corregir errores, responder preguntas y fomentar un ambiente de aprendizaje colaborativo me desafía a crecer constantemente como profesional. Esto no solo enriquece mis habilidades como desarrolladora, sino que también fortalece soft skills como el trabajo en equipo.</p>
+            <p>La interacción constante con preguntas y desafíos variados de mis estudiantes ha potenciado mi habilidad para resolver problemas y encontrar soluciones eficientes. Este proceso continuo de retroalimentación perfecciona mi habilidad para desarrollar soluciones web sólidas y eficaces en mi propia práctica profesional.</p>
+            <div>
+                <h3>Proyectos en clase</h3>
+                <div class="cardsProyectosenClase">
+                    <div>
+                        <a href="">
+                            <div>
+                                <h4></h4>
+                            </div>
+                        </a>
+                        <p></p>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div>
+                                <h4></h4>
+                            </div>
+                        </a>
+                        <p></p>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div>
+                                <h4></h4>
+                            </div>
+                        </a>
+                        <p></p>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div>
+                                <h4></h4>
+                            </div>
+                        </a>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Skills</h3>
+            <div class="skillsIconos">
+                <img src="./assets/html.png" alt="html">
+                <img src="./assets/css.png" alt="css">
+                <img src="./assets/bootstrap.png" alt="bootstrap">
+                <img src="./assets/git.png" alt="git">
+                <img src="./assets/github.png" alt="github">
+                <img src="./assets/wordpress-logo.png" alt="wordpress">
+            </div>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <div class="sectionForm">
+                <form action="https://formspree.io/f/mjvngbgo" method="post">
+                    <div>
+                        <label for="nombreapellido">Nombre y Apellido</label>
+                        <input type="text" name="nombreapellido" id="nombreapellido" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Escribi tu mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="formBoton">    
+                        <input type="submit" value="Enviar" class="btnEnviar">
+                    </div>
+                </form>
+            </div>
+            <div class="sectionDatos">
+                <p>abrilaiellogarcia@gmail.com</p>
+                <p>linkedin.com/abril-aiello</p>
+                <p>github.com/abrilaielloaa</p>
+                <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© 2023 Abril Aiello</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
-
 </html>

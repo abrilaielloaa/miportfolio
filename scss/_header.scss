@@ -1,0 +1,61 @@
+header {
+    color: $colorsecundario;
+    width: 100%;
+    background-color: $colorprimario;
+}
+.botonMenu {
+    color: $colorterciario;
+    border-color: $colorterciario;
+}  
+.botonMenuImagen {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(../assets/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}  
+.botonCerrarMenu {
+    border: none;
+    background: transparent;
+}  
+.menuDesplegado {
+   background-color: $colorsecundario;
+}
+.menuDesplegado ul {
+    list-style: none;
+    font-family: $fuentesecundaria, sans-serif;
+    text-align: end;
+    font-size: 2.5rem;
+}
+  
+.menuDesplegado li {
+    margin: 3rem 0;
+    border-bottom: $colorprimario 1px solid;
+}
+  
+nav a {
+    color: $colorprimario;
+    text-decoration: none;
+}
+  
+.divTextoBienvenida p {
+    font-family: $fuentesecundaria;
+    color: $colorterciario;
+    text-align: center;
+}
+.divTextoBienvenida p span {
+    font-weight: 500;
+}
+  
+.divMiPortfolio {
+    margin: 11px;
+}
+.divMiPortfolio p {
+    font-size: 4rem;
+    color: $colorsecundario;
+    font-family: $fuenteprimaria;
+}
+  

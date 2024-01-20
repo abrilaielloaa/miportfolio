@@ -1,0 +1,50 @@
+.contacto {
+    padding: 0 15px;
+}
+.contacto h3 {
+    font-family: $fuentesecundaria;
+}
+.divContacto div {
+    margin: 80px 0;
+}
+.divContacto div div {
+    margin: 40px 0 0 0;
+}
+.sectionForm {
+    font-family: $fuentesecundaria;
+    justify-self: center;
+    margin-left: 1rem;
+}
+.sectionForm form label {
+    color: $colorsecundario;
+    font-weight: 600;
+}
+.sectionForm form input,
+.sectionForm form textarea {
+    border: $colorprimario 1px solid;
+    border-radius: 4px;
+}
+.sectionForm form .btnEnviar {
+    background-color: $colorprimario;
+    color: $colorterciario;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.sectionDatos {
+    text-align: end;
+    color: $colorterciario;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.sectionDatos p {
+    margin: 26px 0;
+    font-size: 1.1rem;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+}
+form .formBoton {
+    display: flex;
+    align-items: center;
+}

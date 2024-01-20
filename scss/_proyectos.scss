@@ -1,0 +1,46 @@
+.proyectosEnClase{
+    display: flex;
+    flex-direction: row;
+}
+.divProyectos{
+    width: 20%;
+    border: #F63804 solid 1px;
+}
+.proyectos{
+    width: 300px;
+    height: 200px;
+    background-color: #F5CFEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proyectos:hover h5{
+    display: none;
+}
+  
+.disneyProyecto:hover::after{
+    content: url(../assets/disney.png);
+    width:  300px;
+    height: 200px;
+}
+  
+.divMisProyectos {
+    font-family: work sans, sans-serif;
+    text-align: center;
+}
+.divMisProyectos article div {
+    background-color: #BD7E80;
+    color: #F5CFEB;
+}
+.skills h3 {
+    text-align: end;
+}
+.skillsIconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillsIconos img {
+    width: 70px;
+    margin: 25px;
+}
