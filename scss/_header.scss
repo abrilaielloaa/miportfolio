@@ -2,6 +2,15 @@ header {
     color: $colorsecundario;
     width: 100%;
     background-color: $colorprimario;
+    top: 0;
+}
+.divMobile{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 30%;
+    }
 }
 .botonMenu {
     color: $colorterciario;
@@ -23,6 +32,7 @@ header {
 }  
 .menuDesplegado {
    background-color: $colorsecundario;
+   width: 30%;
 }
 .menuDesplegado ul {
     list-style: none;
@@ -40,22 +50,23 @@ nav a {
     color: $colorprimario;
     text-decoration: none;
 }
-  
-.divTextoBienvenida p {
-    font-family: $fuentesecundaria;
-    color: $colorterciario;
-    text-align: center;
+.divTitulo{
+    margin-top: 10rem;
+    p {
+        font-family: $fuentesecundaria;
+        color: $colorterciario;
+        text-align: center;
+    }
 }
-.divTextoBienvenida p span {
-    font-weight: 500;
+.tituloPresentacion {
+    margin-top: 12rem;
+    p{
+        font-size: 4rem;
+        color: $colorsecundario;
+        font-family: $fuenteprimaria;
+        text-align: start;
+        margin-left: 1rem;
+    }
 }
-  
-.divMiPortfolio {
-    margin: 11px;
-}
-.divMiPortfolio p {
-    font-size: 4rem;
-    color: $colorsecundario;
-    font-family: $fuenteprimaria;
-}
-  
+
+

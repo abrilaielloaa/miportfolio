@@ -1,0 +1,31 @@
+.acercaDeMi{
+    margin: 6rem 1rem 0 1rem;
+    h2{
+        text-align: end;
+    }
+    p{
+        color: $colorterciario;
+        text-align: justify;
+    }
+}
+.miExperiencia, .skills{
+    margin: 3rem 1rem;
+    h2{
+        text-align: start;
+    }
+    p{
+        color: $colorterciario;
+        text-align: justify;
+    }
+}
+
+.skillsIconos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        width: 70px;
+        margin: 25px;
+    }
+}

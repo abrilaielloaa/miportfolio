@@ -13,38 +13,47 @@
 .sectionForm {
     font-family: $fuentesecundaria;
     justify-self: center;
-    margin-left: 1rem;
+    margin: 1rem;
+    label{
+        color: $colorsecundario;
+        font-weight: 600;
+    }
+    input, textarea{
+        border: $colorprimario 1px solid;
+        border-radius: 4px;
+        color: $colorterciario;
+        font-family: $fuentesecundaria;
+    }
+    .formBoton {
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        .btnEnviar{
+            background-color: $colorprimario;
+            color: $colorterciario;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+        .btnEnviar:hover{
+            color: $colorsecundario;
+            background-color: $colorprimario;
+            border: $colorprimario 3px solid;
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
 }
-.sectionForm form label {
-    color: $colorsecundario;
-    font-weight: 600;
-}
-.sectionForm form input,
-.sectionForm form textarea {
-    border: $colorprimario 1px solid;
-    border-radius: 4px;
-}
-.sectionForm form .btnEnviar {
-    background-color: $colorprimario;
-    color: $colorterciario;
-    font-weight: 600;
-    border-radius: 4px;
-}
+
 .sectionDatos {
     text-align: end;
     color: $colorterciario;
     align-items: flex-end;
     justify-content: flex-end;
-}
-.sectionDatos p {
-    margin: 26px 0;
-    font-size: 1.1rem;
-}
-form div {
-    display: flex;
-    flex-direction: column;
-}
-form .formBoton {
-    display: flex;
-    align-items: center;
+    margin: 0 1rem 1rem;
+    p {
+        margin: 3rem 0;
+        font-size: 1.1rem;
+    }
 }

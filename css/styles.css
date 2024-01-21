@@ -50,6 +50,7 @@ h5 {
 }
 
 footer {
+  margin-top: 5rem;
   font-size: 1rem;
   text-align: center;
   color: #F63804;
@@ -60,6 +61,16 @@ header {
   color: #F63804;
   width: 100%;
   background-color: #F5CFEB;
+  top: 0;
+}
+
+.divMobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.divMobile img {
+  width: 30%;
 }
 
 .botonMenu {
@@ -85,6 +96,7 @@ header {
 
 .menuDesplegado {
   background-color: #F63804;
+  width: 30%;
 }
 
 .menuDesplegado ul {
@@ -104,24 +116,57 @@ nav a {
   text-decoration: none;
 }
 
-.divTextoBienvenida p {
+.divTitulo {
+  margin-top: 10rem;
+}
+.divTitulo p {
   font-family: "work-sans", sans-serif;
   color: #BD7E80;
   text-align: center;
 }
 
-.divTextoBienvenida p span {
-  font-weight: 500;
+.tituloPresentacion {
+  margin-top: 12rem;
 }
-
-.divMiPortfolio {
-  margin: 11px;
-}
-
-.divMiPortfolio p {
+.tituloPresentacion p {
   font-size: 4rem;
   color: #F63804;
   font-family: "shrikhand", sans-serif;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.acercaDeMi {
+  margin: 6rem 1rem 0 1rem;
+}
+.acercaDeMi h2 {
+  text-align: end;
+}
+.acercaDeMi p {
+  color: #BD7E80;
+  text-align: justify;
+}
+
+.miExperiencia, .skills {
+  margin: 3rem 1rem;
+}
+.miExperiencia h2, .skills h2 {
+  text-align: start;
+}
+.miExperiencia p, .skills p {
+  color: #BD7E80;
+  text-align: justify;
+}
+
+.skillsIconos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skillsIconos img {
+  width: 70px;
+  margin: 25px;
 }
 
 .proyectosEnClase {
@@ -163,21 +208,6 @@ nav a {
   color: #F5CFEB;
 }
 
-.skills h3 {
-  text-align: end;
-}
-
-.skillsIconos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skillsIconos img {
-  width: 70px;
-  margin: 25px;
-}
-
 .contacto {
   padding: 0 15px;
 }
@@ -197,25 +227,37 @@ nav a {
 .sectionForm {
   font-family: "work-sans", sans-serif;
   justify-self: center;
-  margin-left: 1rem;
+  margin: 1rem;
 }
-
-.sectionForm form label {
+.sectionForm label {
   color: #F63804;
   font-weight: 600;
 }
-
-.sectionForm form input,
-.sectionForm form textarea {
+.sectionForm input, .sectionForm textarea {
   border: #F5CFEB 1px solid;
   border-radius: 4px;
+  color: #BD7E80;
+  font-family: "work-sans", sans-serif;
 }
-
-.sectionForm form .btnEnviar {
+.sectionForm .formBoton {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+.sectionForm .formBoton .btnEnviar {
   background-color: #F5CFEB;
   color: #BD7E80;
   font-weight: 600;
   border-radius: 4px;
+}
+.sectionForm .formBoton .btnEnviar:hover {
+  color: #F63804;
+  background-color: #F5CFEB;
+  border: #F5CFEB 3px solid;
+}
+.sectionForm div {
+  display: flex;
+  flex-direction: column;
 }
 
 .sectionDatos {
@@ -223,21 +265,11 @@ nav a {
   color: #BD7E80;
   align-items: flex-end;
   justify-content: flex-end;
+  margin: 0 1rem 1rem;
 }
-
 .sectionDatos p {
-  margin: 26px 0;
+  margin: 3rem 0;
   font-size: 1.1rem;
-}
-
-form div {
-  display: flex;
-  flex-direction: column;
-}
-
-form .formBoton {
-  display: flex;
-  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
