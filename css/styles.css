@@ -27,10 +27,11 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2.3rem;
+  display: inline;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   border-bottom: #F63804 solid 1px;
 }
 
@@ -57,6 +58,16 @@ footer {
   letter-spacing: 0.5rem;
 }
 
+@media (min-width: 750px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
 header {
   color: #F63804;
   width: 100%;
@@ -136,6 +147,32 @@ nav a {
   margin-left: 1rem;
 }
 
+@media (min-width: 750px) {
+  .divRedesMobile {
+    display: none;
+  }
+  .divMobile {
+    width: 10%;
+    align-items: center;
+  }
+  .tituloPresentacion p {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 992px) {
+  .divTitulo {
+    margin: 8rem 1rem 0;
+  }
+  .divTitulo .tituloTexto {
+    margin: 0 6rem;
+  }
+  .tituloPresentacion {
+    margin-top: 6rem;
+  }
+  .tituloPresentacion p {
+    font-size: 8rem;
+  }
+}
 .acercaDeMi {
   margin: 6rem 1rem 0 1rem;
 }
@@ -169,6 +206,25 @@ nav a {
   margin: 25px;
 }
 
+@media (min-width: 750px) {
+  .acercaDeMi {
+    margin: 8rem 3rem;
+  }
+  .miExperiencia, .skills {
+    margin: 7rem 3rem;
+  }
+  .skillsIconos {
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 992px) {
+  .acercaDeMi {
+    margin: 8rem 6rem;
+  }
+  .miExperiencia, .skills {
+    margin: 7rem 6rem;
+  }
+}
 .proyectosEnClase {
   display: flex;
   flex-direction: row;
@@ -209,19 +265,11 @@ nav a {
 }
 
 .contacto {
-  padding: 0 15px;
+  margin: 2rem 1rem;
 }
-
-.contacto h3 {
-  font-family: "work-sans", sans-serif;
-}
-
-.divContacto div {
-  margin: 80px 0;
-}
-
-.divContacto div div {
-  margin: 40px 0 0 0;
+.contacto h2 {
+  font-family: "shrikhand", sans-serif;
+  text-align: end;
 }
 
 .sectionForm {
@@ -270,6 +318,47 @@ nav a {
 .sectionDatos p {
   margin: 3rem 0;
   font-size: 1.1rem;
+}
+
+@media (min-width: 750px) {
+  .contacto {
+    margin: 3rem 3rem;
+  }
+  .sectionForm {
+    margin: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .formYDatos {
+    display: flex;
+    flex-direction: row;
+    margin: 6rem 0;
+  }
+  .sectionForm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sectionForm form {
+    width: 70%;
+  }
+  .sectionForm form .formBoton {
+    align-items: stretch;
+    margin: 0;
+  }
+  .sectionForm div {
+    margin: 3rem 0;
+  }
+  .sectionDatos {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #BD7E80;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .sectionDatos p {
+    margin: 3rem 0 0 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

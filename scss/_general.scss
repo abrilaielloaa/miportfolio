@@ -14,9 +14,10 @@ h1, h2, h3 {
 }
 h1 {
     font-size: 2.3rem;
+    display: inline;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     border-bottom: $colorsecundario solid 1px;
 }
 h3 {
@@ -37,4 +38,15 @@ footer {
     text-align: center;
     color: #F63804;
     letter-spacing: 0.5rem;
+}
+@media (min-width:750px) {
+    h1{
+        font-size: 4rem;
+    }
+    
+}
+@media (min-width:992px){
+    h2{
+        font-size: 4rem;
+    }
 }

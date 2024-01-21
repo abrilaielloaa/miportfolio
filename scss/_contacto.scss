@@ -1,14 +1,10 @@
 .contacto {
-    padding: 0 15px;
-}
-.contacto h3 {
-    font-family: $fuentesecundaria;
-}
-.divContacto div {
-    margin: 80px 0;
-}
-.divContacto div div {
-    margin: 40px 0 0 0;
+    margin: 2rem 1rem;
+    h2 {
+        font-family: $fuenteprimaria;
+        text-align: end;
+    }
+
 }
 .sectionForm {
     font-family: $fuentesecundaria;
@@ -55,5 +51,45 @@
     p {
         margin: 3rem 0;
         font-size: 1.1rem;
+    }
+}
+@media (min-width:750px) {
+    .contacto{
+        margin: 3rem 3rem;
+    }
+    .sectionForm{
+        margin: 4rem;
+    }
+}
+@media (min-width:992px){
+    .formYDatos{
+        display: flex;
+        flex-direction: row;
+        margin: 6rem 0;
+    }
+    .sectionForm{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        form{
+            width: 70%;
+            .formBoton{
+                align-items: stretch;
+                margin: 0;
+            }
+        }
+        div{
+            margin: 3rem 0;
+        }
+    }
+    .sectionDatos{
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid #BD7E80;
+        width: 100%;
+        justify-content: flex-end;
+        p{
+            margin: 3rem 0 0 0;
+        }
     }
 }

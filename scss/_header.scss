@@ -68,5 +68,32 @@ nav a {
         margin-left: 1rem;
     }
 }
-
+@media (min-width:750px) {
+    .divRedesMobile{
+        display: none;
+    }
+    .divMobile{
+        width: 10%;
+        align-items: center;
+    }
+    .tituloPresentacion{
+        p{
+            font-size: 6rem;
+        }
+    }
+}
+@media (min-width:992px){
+    .divTitulo{
+        margin:8rem 1rem 0;
+        .tituloTexto{
+            margin: 0 6rem;
+        }
+    }
+    .tituloPresentacion{
+        margin-top: 6rem;
+        p{
+            font-size: 8rem;
+        }
+    }
+}
 

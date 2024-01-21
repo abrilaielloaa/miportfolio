@@ -29,3 +29,22 @@
         margin: 25px;
     }
 }
+@media (min-width:750px) {
+    .acercaDeMi{
+        margin: 8rem 3rem;
+    }
+    .miExperiencia, .skills{
+        margin: 7rem 3rem;
+    }
+    .skillsIconos{
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width:992px){
+    .acercaDeMi{
+        margin: 8rem 6rem ;
+    }
+    .miExperiencia, .skills{
+        margin: 7rem 6rem;
+    }
+}
