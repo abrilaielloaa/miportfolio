@@ -32,6 +32,9 @@ h5{
 .acercaDeMi, .divMisProyectos, .skills {
     margin-bottom: 62px;
 }
+.redesDesktop{
+    display: none;
+}
 footer {
     margin-top: 5rem;
     font-size: 1rem;
@@ -48,5 +51,10 @@ footer {
 @media (min-width:992px){
     h2{
         font-size: 4rem;
+    }
+}
+@media (min-width:1440px){
+    h2{
+        font-size: 6rem;
     }
 }

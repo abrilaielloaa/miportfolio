@@ -13,6 +13,7 @@
     label{
         color: $colorsecundario;
         font-weight: 600;
+        font-family: $fuentesecundaria;
     }
     input, textarea{
         border: $colorprimario 1px solid;
@@ -92,4 +93,26 @@
             margin: 3rem 0 0 0;
         }
     }
+}
+@media (min-width:1440px){
+    .contacto{
+        margin:3rem 6rem;
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .formYDatos{
+        margin: 6rem 0;
+    }
+    .sectionForm{
+        margin: 3rem 0;
+        label{
+            font-size: 1.5rem;
+        }
+        input{
+            height: 7vh;
+        }
+    }
+
+
 }

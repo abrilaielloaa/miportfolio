@@ -68,12 +68,11 @@ nav a {
         margin-left: 1rem;
     }
 }
+.redesDesktop{
+    display: none;
+}
 @media (min-width:750px) {
-    .divRedesMobile{
-        display: none;
-    }
     .divMobile{
-        width: 10%;
         align-items: center;
     }
     .tituloPresentacion{
@@ -83,6 +82,12 @@ nav a {
     }
 }
 @media (min-width:992px){
+    .divMobile{
+        width: 10%;
+    }
+    .divRedesMobile{
+        display: none;
+    }
     .divTitulo{
         margin:8rem 1rem 0;
         .tituloTexto{
@@ -93,6 +98,32 @@ nav a {
         margin-top: 6rem;
         p{
             font-size: 8rem;
+        }
+    }
+    .redesDesktop{
+        position: fixed;
+        right: 0;
+        bottom: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width:1440px){
+    h1{
+        font-size: 6rem;
+    }
+    .divMobile{
+        width: 4%;
+    }
+    .divTitulo{
+        margin: 12rem 2rem;
+        p{
+            font-size: 1.7rem;
+        }
+        .tituloPresentacion{
+            p{
+                font-size: 8rem;
+            }
         }
     }
 }

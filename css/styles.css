@@ -50,6 +50,10 @@ h5 {
   margin-bottom: 62px;
 }
 
+.redesDesktop {
+  display: none;
+}
+
 footer {
   margin-top: 5rem;
   font-size: 1rem;
@@ -66,6 +70,11 @@ footer {
 @media (min-width: 992px) {
   h2 {
     font-size: 4rem;
+  }
+}
+@media (min-width: 1440px) {
+  h2 {
+    font-size: 6rem;
   }
 }
 header {
@@ -147,12 +156,12 @@ nav a {
   margin-left: 1rem;
 }
 
+.redesDesktop {
+  display: none;
+}
+
 @media (min-width: 750px) {
-  .divRedesMobile {
-    display: none;
-  }
   .divMobile {
-    width: 10%;
     align-items: center;
   }
   .tituloPresentacion p {
@@ -160,6 +169,12 @@ nav a {
   }
 }
 @media (min-width: 992px) {
+  .divMobile {
+    width: 10%;
+  }
+  .divRedesMobile {
+    display: none;
+  }
   .divTitulo {
     margin: 8rem 1rem 0;
   }
@@ -172,9 +187,36 @@ nav a {
   .tituloPresentacion p {
     font-size: 8rem;
   }
+  .redesDesktop {
+    position: fixed;
+    right: 0;
+    bottom: 1px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 6rem;
+  }
+  .divMobile {
+    width: 4%;
+  }
+  .divTitulo {
+    margin: 12rem 2rem;
+  }
+  .divTitulo p {
+    font-size: 1.7rem;
+  }
+  .divTitulo .tituloPresentacion p {
+    font-size: 8rem;
+  }
 }
 .acercaDeMi {
   margin: 6rem 1rem 0 1rem;
+  border: solid 3px #bd7e80;
+  border-radius: 40px;
+  padding: 2rem;
 }
 .acercaDeMi h2 {
   text-align: end;
@@ -220,9 +262,26 @@ nav a {
 @media (min-width: 992px) {
   .acercaDeMi {
     margin: 8rem 6rem;
+    padding: 3rem;
   }
   .miExperiencia, .skills {
     margin: 7rem 6rem;
+  }
+}
+@media (min-width: 1440px) {
+  .acercaDeMi {
+    padding: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .skillsIconos {
+    margin: 5rem;
+    justify-content: space-around;
+  }
+  .skillsIconos img {
+    width: 100px;
+    margin: 0;
   }
 }
 .proyectosEnClase {
@@ -280,6 +339,7 @@ nav a {
 .sectionForm label {
   color: #F63804;
   font-weight: 600;
+  font-family: "work-sans", sans-serif;
 }
 .sectionForm input, .sectionForm textarea {
   border: #F5CFEB 1px solid;
@@ -358,6 +418,26 @@ nav a {
   }
   .sectionDatos p {
     margin: 3rem 0 0 0;
+  }
+}
+@media (min-width: 1440px) {
+  .contacto {
+    margin: 3rem 6rem;
+  }
+  .contacto p {
+    font-size: 1.5rem;
+  }
+  .formYDatos {
+    margin: 6rem 0;
+  }
+  .sectionForm {
+    margin: 3rem 0;
+  }
+  .sectionForm label {
+    font-size: 1.5rem;
+  }
+  .sectionForm input {
+    height: 7vh;
   }
 }
 
